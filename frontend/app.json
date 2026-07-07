@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "TransSoft Voice",
+    "slug": "transsoft-voice",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0F172A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "TransSoft Voice needs microphone access to record consignment details."
+      }
+    },
+    "android": {
+      "permissions": [
+        "RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow TransSoft Voice to access your microphone to record consignment details."
+        }
+      ],
+      "expo-asset"
+    ],
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "extra": {
+      "apiBaseUrl": "http://localhost:8000",
+      "eas": {}
+    }
+  }
+}
